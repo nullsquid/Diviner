@@ -12,6 +12,7 @@ GameObject:
   - 50: {fileID: 5079902}
   - 233: {fileID: 23393894}
   - 58: {fileID: 5891010}
+  - 114: {fileID: 11421718}
   m_Layer: 0
   m_Name: INTESTINE_SECTION
   m_TagString: Untagged
@@ -31,6 +32,7 @@ GameObject:
   - 50: {fileID: 5011980}
   - 233: {fileID: 23394878}
   - 58: {fileID: 5885974}
+  - 114: {fileID: 11458488}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (4)
   m_TagString: Untagged
@@ -50,6 +52,7 @@ GameObject:
   - 50: {fileID: 5081174}
   - 233: {fileID: 23341566}
   - 58: {fileID: 5813776}
+  - 114: {fileID: 11492200}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (8)
   m_TagString: Untagged
@@ -69,6 +72,7 @@ GameObject:
   - 50: {fileID: 5089976}
   - 233: {fileID: 23348114}
   - 58: {fileID: 5869372}
+  - 114: {fileID: 11423804}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (7)
   m_TagString: Untagged
@@ -88,6 +92,7 @@ GameObject:
   - 50: {fileID: 5007686}
   - 233: {fileID: 23386806}
   - 58: {fileID: 5851876}
+  - 114: {fileID: 11442116}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (3)
   m_TagString: Untagged
@@ -107,6 +112,7 @@ GameObject:
   - 50: {fileID: 5091266}
   - 233: {fileID: 23370780}
   - 58: {fileID: 5813096}
+  - 114: {fileID: 11430304}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (2)
   m_TagString: Untagged
@@ -126,6 +132,7 @@ GameObject:
   - 50: {fileID: 5081294}
   - 233: {fileID: 23302744}
   - 58: {fileID: 5876064}
+  - 114: {fileID: 11457824}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (6)
   m_TagString: Untagged
@@ -145,6 +152,7 @@ GameObject:
   - 50: {fileID: 5003612}
   - 233: {fileID: 23351192}
   - 58: {fileID: 5843828}
+  - 114: {fileID: 11477412}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (1)
   m_TagString: Untagged
@@ -164,6 +172,7 @@ GameObject:
   - 50: {fileID: 5042318}
   - 233: {fileID: 23313278}
   - 58: {fileID: 5878024}
+  - 114: {fileID: 11458984}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (9)
   m_TagString: Untagged
@@ -184,6 +193,7 @@ GameObject:
   - 58: {fileID: 5804126}
   - 232: {fileID: 23220836}
   - 114: {fileID: 11404700}
+  - 114: {fileID: 11417320}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (5)
   m_TagString: Untagged
@@ -203,6 +213,7 @@ GameObject:
   - 50: {fileID: 5050034}
   - 233: {fileID: 23388998}
   - 58: {fileID: 5838804}
+  - 114: {fileID: 11416102}
   m_Layer: 0
   m_Name: INTESTINE_SECTION (10)
   m_TagString: Untagged
@@ -705,11 +716,187 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 177776}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b42bc556e2cf4294a9d453aefe700587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11416102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 0
+  returnOnCancelled: 0
+  returnOnCompleted: 1
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11417320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11421718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11423804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11430304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11442116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11457824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11458488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11458984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11477412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
+--- !u!114 &11492200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 0
+  returnOnCompleted: 0
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
 --- !u!212 &21203906
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1002,7 +1189,7 @@ DistanceJoint2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 177776}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 5025716, guid: 4af04ff7ca058a846bb54b60b0f48fc4,
@@ -1245,6 +1432,26 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_AngleLimits.m_UpperAngle
       value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: returnOnCancelled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: dragEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: returnOnCompleted
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

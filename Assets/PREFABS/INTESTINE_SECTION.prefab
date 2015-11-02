@@ -12,6 +12,7 @@ GameObject:
   - 50: {fileID: 5058744}
   - 233: {fileID: 23371500}
   - 58: {fileID: 5862024}
+  - 114: {fileID: 11448088}
   m_Layer: 0
   m_Name: INTESTINE_SECTION
   m_TagString: Untagged
@@ -60,6 +61,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .0500000007
+--- !u!114 &11448088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a0e492e94664ec0ac44d252c40e3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragEnabled: 1
+  returnOnCancelled: 1
+  returnOnCompleted: 1
+  returnDuration: 1
+  hoverCursor: {fileID: 0}
 --- !u!212 &21251740
 SpriteRenderer:
   m_ObjectHideFlags: 1
