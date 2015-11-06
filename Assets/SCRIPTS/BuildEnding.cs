@@ -52,7 +52,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "an ivory rook piece");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "a rusted coin");
             }
             ///////
@@ -60,7 +60,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "It feels frozen.");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "You found " + first_sacrifice.GetStringVariable("organString") + " " + first_sacrifice.GetStringVariable("commitmentString") + "," + first_sacrifice.GetStringVariable("nonAnswerString");
@@ -102,7 +102,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "and you cut your right knee");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "and the autumn leaves cushion you");
             }
             ///////
@@ -110,7 +110,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "There are droplets of blood where you land.");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "In the woods, " + first_sacrifice.GetStringVariable("commitmentString") + " catches your " + first_sacrifice.GetStringVariable("nonAnswerString") + ". You trip and " + first_sacrifice.GetStringVariable("organString");
@@ -151,7 +151,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "as it vanishes");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "and crunch it underfoot");
             }
             ///////
@@ -159,7 +159,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "It smells like rust.");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = first_sacrifice.GetStringVariable("nonAnswerString") + " you step on " + first_sacrifice.GetStringVariable("commitmentString") + " " + first_sacrifice.GetStringVariable("organString") + ".";
@@ -168,7 +168,7 @@ public class BuildEnding : MonoBehaviour {
 
         else if (firstDivination == "Stone" && firstAnswer == "silence") {
             if (howManyNullAnswers <= 2) {
-                first_sacrifice.SetStringVariable("nonAnswerString", "and passes you by");
+                first_sacrifice.SetStringVariable("nonAnswerString", "and pass you by");
             }
             else if (howManyNullAnswers <= 4) {
                 first_sacrifice.SetStringVariable("nonAnswerString", "and crawls in your wake");
@@ -201,15 +201,15 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "breathes, rhythmically");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "betwixt the trees");
             }
             ///////
             if (talkedToOffering == true) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", "It moaned in apathy.");
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It moans in apathy.");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "You hear the wind " + first_sacrifice.GetStringVariable("commitmentString") + " " + first_sacrifice.GetStringVariable("organString") + ", " + first_sacrifice.GetStringVariable("nonAnswerString");
@@ -251,7 +251,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "iridescent");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "ember");
             }
             ///////
@@ -259,7 +259,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "They will never stop watching.");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "You see a pair of " + first_sacrifice.GetStringVariable("organString") + " eyes consumed by the black. They " + first_sacrifice.GetStringVariable("commitmentString") + " and " + first_sacrifice.GetStringVariable("nonAnswerString");
@@ -301,7 +301,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "butterfly");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "bird");
             }
             ///////
@@ -309,7 +309,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "You hear its wings utter pestilence");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "That night, you saw a " + first_sacrifice.GetStringVariable("commitmentString") + " " + first_sacrifice.GetStringVariable("organString") + ". " + first_sacrifice.GetStringVariable("nonAnswerString") + " ";
@@ -351,7 +351,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "Staring at it makes you nauseous");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "It does not move, but you cannot get any closer to it.");
             }
             ///////
@@ -359,7 +359,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "No one lives there");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "You see a " + first_sacrifice.GetStringVariable("commitmentString") + "house, " + first_sacrifice.GetStringVariable("nonAnswerString") + ". " + first_sacrifice.GetStringVariable("organString");
@@ -400,7 +400,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "undulates after your footsteps");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "curls up before your feet");
             }
             ///////
@@ -408,7 +408,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "It vows to never let you go");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "A serpent " + first_sacrifice.GetStringVariable("organString") + " and " + first_sacrifice.GetStringVariable("nonAnswerString") + " at you " + first_sacrifice.GetStringVariable("commitmentString") + ".";
@@ -450,7 +450,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "in a dead fox");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "in the ground");
             }
             ///////
@@ -458,7 +458,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "It isn't there anymore");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "You noticed a hole " + first_sacrifice.GetStringVariable("organString") + ", and " + first_sacrifice.GetStringVariable("commitmentString") + first_sacrifice.GetStringVariable("nonAnswerString") + ".";
@@ -499,7 +499,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "smolders");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "glows");
             }
             ///////
@@ -507,7 +507,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "It is still there somwehere, aimless and wary");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "You see a tower in the distance; its top " + first_sacrifice.GetStringVariable("organString") + " " + first_sacrifice.GetStringVariable("commitmentString") + " as it " + first_sacrifice.GetStringVariable("nonAnswerString") + ".";
@@ -548,7 +548,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "a fox kit");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "a rabbit");
             }
             ///////
@@ -556,7 +556,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "It reverberates and is quickly snuffed out");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = first_sacrifice.GetStringVariable("commitmentString") + " and hear " + first_sacrifice.GetStringVariable("organString") + " " + first_sacrifice.GetStringVariable("nonAnswerString");
@@ -598,7 +598,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "broken on");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "nailed to");
             }
             ///////
@@ -606,7 +606,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "It looks as if it is judging you.");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "Walking " + first_sacrifice.GetStringVariable("nonAnswerString") + " you find a " + first_sacrifice.GetStringVariable("commitmentString") + " mask " + first_sacrifice.GetStringVariable("organString");
@@ -649,7 +649,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "the bark on");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "the tips of");
             }
             ///////
@@ -657,7 +657,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "They tower over you, motionless.");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = first_sacrifice.GetStringVariable("commitmentVariable") + " touches " + first_sacrifice.GetStringVariable("organString") + " every tree and you see that they are all " + first_sacrifice.GetStringVariable("nonAnswerString");
@@ -701,7 +701,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "between your fingers");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "beneath your feet");
             }
             ///////
@@ -709,7 +709,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "It will not wash off");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "That night, walking " + first_sacrifice.GetStringVariable("commitmentString") + ", you notice " + first_sacrifice.GetStringVariable("nonAnswerString") + " " + first_sacrifice.GetStringVariable("organString") + ".";
@@ -750,7 +750,7 @@ public class BuildEnding : MonoBehaviour {
             else if (firstOrganTouched == "pancreas") {
                 first_sacrifice.SetStringVariable("organnString", "at the bottom of a lake");
             }
-            else if (firstOrganTouched == null) {
+            else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "inside a deep knothole");
             }
             ///////
@@ -758,10 +758,364 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "It looks lost.");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
             theFirstSentence = "You thought you saw a " + first_sacrifice.GetStringVariable("commitmentString") + " face in the dark " + first_sacrifice.GetStringVariable("organString") + "; it looked " + first_sacrifice.GetStringVariable("nonAnswerString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Nothing" && firstAnswer == "vision") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "an eye");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "an egg");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "a wing");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "a lamb");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "a mouth");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "a perfect circle");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "a star");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "drawn in charcoal on");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "carved into");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organnString", "burnt into");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "painted on");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Its meaning escapes you.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "There was " + first_sacrifice.GetStringVariable("nonAnswerString") + " " + first_sacrifice.GetStringVariable("organString") + " one of the old oaks; " + first_sacrifice.GetStringVariable("commitmentString") + " on another.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Tree" && firstAnswer == "prosperity") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "acorns");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "walnut husks");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "seashells");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "bones");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "Every one looks decayed from the inside");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "Each one is stained dark");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "They are all being devoured by insects");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "a clearing strewn with");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "a pit filled with");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organnString", "a beach littered with");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "a gravesite, cluttered with");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "They came from elsewhere.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You come across a " + first_sacrifice.GetStringVariable("organString") + " " + first_sacrifice.GetStringVariable("nonAnswerString") + " . " + first_sacrifice.GetStringVariable("commitmentString"); 
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Tree" && firstAnswer == "dread") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "tall");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "stout");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "eldritch");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "sinister");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "in the moonlight");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "through the ambient glow of the forest");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "under the vast expanse of sky");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "serpentine");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "cyclopean");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organnString", "feline");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "ghastly");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It does not follow you home.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "Your shadow appears " + first_sacrifice.GetStringVariable("nonAnswerString") + " and " + first_sacrifice.GetStringVariable("organString") + " " + first_sacrifice.GetStringVariable("commitmentString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+
+        }
+
+        else if (firstDivination == "Tree" && firstAnswer == "death") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "in the shape of a star");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "in the shape of a lotus");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "in the shape of a cross");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "in the shape of a finger");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "pendant");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "ring");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "brooch");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", ", intricately woven from twigs");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", ", built from shiny refuse");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organnString", ", long since abandoned");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "made of sticks and mud");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You wonder how long it has been there.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "There is a nest in a nearby tree " + first_sacrifice.GetStringVariable("organString") + ". It has a " + first_sacrifice.GetStringVariable("commitmentString") + " hanging from it " + first_sacrifice.GetStringVariable("nonAnswerString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+
+        }
+
+        else if (firstDivination == "Tree" && firstAnswer == "silence") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "It twitches, and convulses and is still");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "It appears to be in pain");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "It did not suffer too long");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "It looks at you as its eyes go dark");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", ", on its back");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", ", half-burried in the soil");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "cicada");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "squirrel");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organnString", "trout");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "crow");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You push a mound of dirt on top of it.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "A dying " + first_sacrifice.GetStringVariable("organString") + " lies on the forest floor " + first_sacrifice.GetStringVariable("commitmentString") + ". " + first_sacrifice.GetStringVariable("nonAnswerString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+
+        }
+
+        else if (firstDivination == "Tree" && firstAnswer == "vision") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "Ashen");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "Ghoulish");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "Emaciated");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "Cephalopodean");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "and collapse into dust");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "and extend their tendrils out for you");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "and blur into nothing");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "flail");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "seethe");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organnString", "flicker");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "dance");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You taste the sea deep inside your lungs");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = first_sacrifice.GetStringVariable("nonAnswerString") + " figures " + first_sacrifice.GetStringVariable("organString") + " in front of you; they drip ink " + first_sacrifice.GetStringVariable("commitmentString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+
+        }
+
+
+        else if (firstDivination == "Released" && firstAnswer == "prosperity") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "as you walked");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "as you contemplated the evening");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "as you slept on the forest floor");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "as clouds drowned out the light");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "An owl");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "A hawk");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "A raven");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "distracted the shadows");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "whispered charms to you");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organnString", "guarded your passage");
+            }
+            else if (firstOrganTouched =="") {
+                first_sacrifice.SetStringVariable("organString", "called your name");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You feel somehow safer");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = first_sacrifice.GetStringVariable("commitmentString") + " " + first_sacrifice.GetStringVariable("organString") + " " + first_sacrifice.GetStringVariable("nonAnswerString");
             theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
         }
 
@@ -770,11 +1124,11 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("nonAnswerString", "close enough to embrace you");
             }
             else if (howManyNullAnswers <= 4) {
-                first_sacrifice.SetStringVariable("nonAnswerString", "following at a distance");
+                first_sacrifice.SetStringVariable("nonAnswerString", "lurking within the gloom");
 
             }
             else if (howManyNullAnswers <= 6) {
-                first_sacrifice.SetStringVariable("nonAnswerString", "lurking off in gloom");
+                first_sacrifice.SetStringVariable("nonAnswerString", "staying distant and hidden");
             }
             else if (howManyNullAnswers > 6) {
                 first_sacrifice.SetStringVariable("nonAnswerString", "creeping like a toxic fog");
@@ -792,29 +1146,76 @@ public class BuildEnding : MonoBehaviour {
             }
             ///////
             if (firstOrganTouched == "intestines") {
-                first_sacrifice.SetStringVariable("organString", "pattering softly");
+                first_sacrifice.SetStringVariable("organString", "They stuttered and were gone.");
             }
             else if (firstOrganTouched == "liver") {
-                first_sacrifice.SetStringVariable("organString", "shuffling erratically");
+                first_sacrifice.SetStringVariable("organString", "They cautiously pattered underneath your footfall.");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "with a heavy deliberate gate");
+                first_sacrifice.SetStringVariable("organnString", "They leave no trail.");
             }
-            else if (firstOrganTouched == null) {
-                first_sacrifice.SetStringVariable("organString", "tiptoeing cautiously");
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "They stop when you do.");
             }
             ///////
             if (talkedToOffering == true) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", "You feel at ease.");
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You hope you are not alone in these woods.");
             }
             if (talkedToOffering == false) {
-                first_sacrifice.SetStringVariable("talkedToOfferingString", null);
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
-            theFirstSentence = "You thought you heard footsteps " + first_sacrifice.GetStringVariable("commitmentString") + ", " + first_sacrifice.GetStringVariable("nonAnswerString") + " and " + first_sacrifice.GetStringVariable("organString");
+            theFirstSentence = "You thought you heard footsteps " + first_sacrifice.GetStringVariable("commitmentString") + ", " + first_sacrifice.GetStringVariable("nonAnswerString") + ". " + first_sacrifice.GetStringVariable("organString");
             theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
         }
+        else if (firstDivination == "Released" && firstAnswer == "death") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "leaving a trail of smoke and dust");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "cutting the oppressive shades of desolation");
 
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "cutting the night with the edge of its wings");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "undulating as if through space");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "behind you");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "beside you");
 
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "all around you");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organnString", "It sucks the color from the night");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "You see a flower wilt");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You hope you are not alone in these woods.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You thought you heard footsteps " + first_sacrifice.GetStringVariable("commitmentString") + ", " + first_sacrifice.GetStringVariable("nonAnswerString") + ". " + first_sacrifice.GetStringVariable("organString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
     }
 }
