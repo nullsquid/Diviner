@@ -548,6 +548,7 @@ GameObject:
   - 114: {fileID: 17399677}
   - 114: {fileID: 17399676}
   - 114: {fileID: 17399678}
+  - 114: {fileID: 17399709}
   m_Layer: 0
   m_Name: FIRST_SACRIFICE
   m_TagString: Untagged
@@ -568,7 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1.0
-  scrollPos: {x: 857.528687, y: 182.554443}
+  scrollPos: {x: 861.187256, y: 171.578857}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 399
@@ -579,7 +580,7 @@ MonoBehaviour:
     y: -706.900146
     width: 3278.91968
     height: 2070.08911
-  selectedBlock: {fileID: 17399408}
+  selectedBlock: {fileID: 0}
   selectedCommands: []
   variables:
   - {fileID: 17399285}
@@ -4101,6 +4102,7 @@ MonoBehaviour:
   - {fileID: 17399395}
   - {fileID: 17399397}
   - {fileID: 17399396}
+  - {fileID: 17399709}
   - {fileID: 17399417}
   - {fileID: 17399416}
 --- !u!114 &17399409
@@ -9844,7 +9846,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &17399676
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17399252}
@@ -9862,7 +9864,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &17399677
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17399252}
@@ -9885,7 +9887,7 @@ MonoBehaviour:
   - {fileID: 17399676}
 --- !u!114 &17399678
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17399252}
@@ -9898,7 +9900,7 @@ MonoBehaviour:
   draggableObject: {fileID: 522352998}
 --- !u!114 &17399679
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17399252}
@@ -9911,7 +9913,7 @@ MonoBehaviour:
   draggableObject: {fileID: 522353002}
 --- !u!114 &17399680
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17399252}
@@ -9929,7 +9931,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &17399681
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17399252}
@@ -9952,7 +9954,7 @@ MonoBehaviour:
   - {fileID: 17399680}
 --- !u!114 &17399682
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17399252}
@@ -9965,7 +9967,7 @@ MonoBehaviour:
   draggableObject: {fileID: 522352949}
 --- !u!114 &17399683
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17399252}
@@ -9983,7 +9985,7 @@ MonoBehaviour:
   waitUntilFinished: 1
 --- !u!114 &17399684
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 17399252}
@@ -10436,6 +10438,33 @@ MonoBehaviour:
   eventHandler: {fileID: 17399706}
   commandList:
   - {fileID: 17399707}
+--- !u!114 &17399709
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 17399252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 507
+  errorMessage: 
+  indentLevel: 0
+  targetObject: {fileID: 1755326938}
+  targetComponentAssemblyName: PersistentData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PersistentData
+  targetMethod: AutoSave
+  targetMethodText: 'AutoSave (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1 &56487930
 GameObject:
   m_ObjectHideFlags: 0
@@ -20208,6 +20237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92fdba5332ac5be41ab880ec054dec39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  first_sacrifice: {fileID: 17399253}
 --- !u!4 &1755326940
 Transform:
   m_ObjectHideFlags: 0

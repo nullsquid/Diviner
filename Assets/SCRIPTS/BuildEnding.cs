@@ -1217,6 +1217,6 @@ public class BuildEnding : MonoBehaviour {
             theFirstSentence = "You thought you heard footsteps " + first_sacrifice.GetStringVariable("commitmentString") + ", " + first_sacrifice.GetStringVariable("nonAnswerString") + ". " + first_sacrifice.GetStringVariable("organString");
             theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
         }
-        first_sacrifice.SetStringVariable("endingKey", theFirstSentence + " " + theSecondSentence);
+        first_sacrifice.SetStringVariable("endingKey", theFirstSentence + " " + theSecondSentence + "~");
     }
 }
