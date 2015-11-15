@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: c7e9dea195a720d49a0d69ec3e44c2bd
-timeCreated: 1447532210
+guid: 01ee2076b4b8e5b43a62f8f8fdebe7a2
+timeCreated: 1447532490
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: CULTIST_1_ALT_0
+    21300000: ANIM_MALACH_IDLE_LOOP_0
+    21300002: ANIM_MALACH_IDLE_LOOP_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -51,10 +52,20 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: CULTIST_1_ALT_0
+    - name: ANIM_MALACH_IDLE_LOOP_0
       rect:
         serializedVersion: 2
         x: 0
+        y: 0
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ANIM_MALACH_IDLE_LOOP_1
+      rect:
+        serializedVersion: 2
+        x: 64
         y: 0
         width: 64
         height: 128

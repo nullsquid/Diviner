@@ -5,15 +5,16 @@ using System.Collections.Generic;
 using Fungus;
 public class PersistentData : MonoBehaviour {
     public Flowchart first_sacrifice;
+    public Flowchart main_menu;
+    public int totalOmens;
     //JSONNode saveData = new JSONClass();
     //JsonObject saveData = new JsonObject();
    // public JSONObject data = new JSONObject();
     public Dictionary<string, int> heldProphecies = new Dictionary<string, int>();
     void Start() {
-        AutoSave();
-        Load();
-        
+        GameObject.DontDestroyOnLoad(this);
     }
+    
     public void AutoSave() {
         string savePath = Application.persistentDataPath + "/saveData.txt";
         StreamWriter saveData = new StreamWriter(savePath, true);
@@ -30,7 +31,10 @@ public class PersistentData : MonoBehaviour {
         foreach(string prophecy in seriesOfProphecies) {
             Debug.Log(prophecy);
         }
+        
         loadData.Close();
+        totalOmens = seriesOfProphecies.Length;
+        main_menu.SetIntegerVariable("numberOfOmens", totalOmens); 
     }
 
     public void AddProphecy(string prophKey) {

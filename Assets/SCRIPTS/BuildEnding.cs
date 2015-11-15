@@ -497,7 +497,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "hums");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "smolders");
+                first_sacrifice.SetStringVariable("organString", "smolders");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "glows");
