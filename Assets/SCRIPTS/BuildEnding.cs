@@ -50,7 +50,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "an arrowhead");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "an ivory rook piece");
+                first_sacrifice.SetStringVariable("organString", "an ivory rook piece");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "a rusted coin");
@@ -100,7 +100,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "and you bruise your side");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "and you cut your right knee");
+                first_sacrifice.SetStringVariable("organString", "and you cut your right knee");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "and the autumn leaves cushion you");
@@ -149,7 +149,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "and it sighs");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "as it vanishes");
+                first_sacrifice.SetStringVariable("organString", "as it vanishes");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "and crunch it underfoot");
@@ -199,7 +199,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "upon the river");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "breathes, rhythmically");
+                first_sacrifice.SetStringVariable("organString", "breathe, rhythmically");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "betwixt the trees");
@@ -212,7 +212,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
-            theFirstSentence = "You hear the wind " + first_sacrifice.GetStringVariable("commitmentString") + " " + first_sacrifice.GetStringVariable("organString") + ", " + first_sacrifice.GetStringVariable("nonAnswerString");
+            theFirstSentence = "You hear the wind " + first_sacrifice.GetStringVariable("commitmentString") + ", " + first_sacrifice.GetStringVariable("organString") + ", " + first_sacrifice.GetStringVariable("nonAnswerString");
             theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
         }
 
@@ -249,9 +249,59 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "turquoise");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "iridescent");
+                first_sacrifice.SetStringVariable("organString", "iridescent");
             }
             else if (firstOrganTouched =="") {
+                first_sacrifice.SetStringVariable("organString", "ember");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "They will never stop watching.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You see a pair of " + first_sacrifice.GetStringVariable("organString") + " eyes consumed by the black. They " + first_sacrifice.GetStringVariable("commitmentString") + " and " + first_sacrifice.GetStringVariable("nonAnswerString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Stone" && firstAnswer == "remorse") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "bound away");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "continue fixating on you");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "cautiously leap into the nothing beyond");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "slowly close");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "meow");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "hiss");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "giggle");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "translucent");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "turquoise");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organString", "iridescent");
+            }
+            else if (firstOrganTouched == "") {
                 first_sacrifice.SetStringVariable("organString", "ember");
             }
             ///////
@@ -299,7 +349,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "bat");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "butterfly");
+                first_sacrifice.SetStringVariable("organString", "butterfly");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "bird");
@@ -349,7 +399,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "Your sight dims when you look at it");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "Staring at it makes you nauseous");
+                first_sacrifice.SetStringVariable("organString", "Staring at it makes you nauseous");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "It does not move, but you cannot get any closer to it.");
@@ -398,7 +448,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "dangles from a tree, barring your path");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "undulates after your footsteps");
+                first_sacrifice.SetStringVariable("organString", "undulates after your footsteps");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "curls up before your feet");
@@ -448,7 +498,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "bored into a fir");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "in a dead fox");
+                first_sacrifice.SetStringVariable("organString", "in a dead fox");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "in the ground");
@@ -546,7 +596,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "an owl");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "a fox kit");
+                first_sacrifice.SetStringVariable("organString", "a fox kit");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "a rabbit");
@@ -596,7 +646,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "dug into");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "broken on");
+                first_sacrifice.SetStringVariable("organString", "broken on");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "nailed to");
@@ -647,7 +697,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "all the naked branches of");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "the bark on");
+                first_sacrifice.SetStringVariable("organString", "the bark on");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "the tips of");
@@ -699,7 +749,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "behind your teeth");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "between your fingers");
+                first_sacrifice.SetStringVariable("organString", "between your fingers");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "beneath your feet");
@@ -748,7 +798,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "over a river");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "at the bottom of a lake");
+                first_sacrifice.SetStringVariable("organString", "at the bottom of a lake");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "inside a deep knothole");
@@ -797,7 +847,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "carved into");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "burnt into");
+                first_sacrifice.SetStringVariable("organString", "burnt into");
             }
             else if (firstOrganTouched == "") {
                 first_sacrifice.SetStringVariable("organString", "painted on");
@@ -847,7 +897,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "a pit filled with");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "a beach littered with");
+                first_sacrifice.SetStringVariable("organString", "a beach littered with");
             }
             else if (firstOrganTouched == "") {
                 first_sacrifice.SetStringVariable("organString", "a gravesite, cluttered with");
@@ -897,7 +947,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "cyclopean");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "feline");
+                first_sacrifice.SetStringVariable("organString", "feline");
             }
             else if (firstOrganTouched == "") {
                 first_sacrifice.SetStringVariable("organString", "ghastly");
@@ -948,7 +998,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", ", built from shiny refuse");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", ", long since abandoned");
+                first_sacrifice.SetStringVariable("organString", ", long since abandoned");
             }
             else if (firstOrganTouched == "") {
                 first_sacrifice.SetStringVariable("organString", "made of sticks and mud");
@@ -982,14 +1032,14 @@ public class BuildEnding : MonoBehaviour {
             }
             ////////
             if (commitment == "committed") {
-                first_sacrifice.SetStringVariable("commitmentString", "");
+                first_sacrifice.SetStringVariable("commitmentString", "on the forest floor");
             }
             else if (commitment == "uncommitted") {
-                first_sacrifice.SetStringVariable("commitmentString", ", on its back");
+                first_sacrifice.SetStringVariable("commitmentString", "on its back");
 
             }
             else if (commitment == "timeRanOut") {
-                first_sacrifice.SetStringVariable("commitmentString", ", half-burried in the soil");
+                first_sacrifice.SetStringVariable("commitmentString", "half-burried in the soil");
             }
             ///////
             if (firstOrganTouched == "intestines") {
@@ -999,7 +1049,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "squirrel");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "trout");
+                first_sacrifice.SetStringVariable("organString", "trout");
             }
             else if (firstOrganTouched == "") {
                 first_sacrifice.SetStringVariable("organString", "crow");
@@ -1012,7 +1062,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
-            theFirstSentence = "A dying " + first_sacrifice.GetStringVariable("organString") + " lies on the forest floor " + first_sacrifice.GetStringVariable("commitmentString") + ". " + first_sacrifice.GetStringVariable("nonAnswerString");
+            theFirstSentence = "A dying " + first_sacrifice.GetStringVariable("organString") + " lies  " + first_sacrifice.GetStringVariable("commitmentString") + ". " + first_sacrifice.GetStringVariable("nonAnswerString");
             theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
 
         }
@@ -1050,7 +1100,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "seethe");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "flicker");
+                first_sacrifice.SetStringVariable("organString", "flicker");
             }
             else if (firstOrganTouched == "") {
                 first_sacrifice.SetStringVariable("organString", "dance");
@@ -1102,7 +1152,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "whispered charms to you");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "guarded your passage");
+                first_sacrifice.SetStringVariable("organString", "guarded your passage");
             }
             else if (firstOrganTouched =="") {
                 first_sacrifice.SetStringVariable("organString", "called your name");
@@ -1152,7 +1202,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "They cautiously pattered underneath your footfall.");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "They leave no trail.");
+                first_sacrifice.SetStringVariable("organString", "They leave no trail.");
             }
             else if (firstOrganTouched == "") {
                 first_sacrifice.SetStringVariable("organString", "They stop when you do.");
@@ -1201,7 +1251,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("organString", "");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organnString", "It sucks the color from the night");
+                first_sacrifice.SetStringVariable("organString", "It sucks the color from the night");
             }
             else if (firstOrganTouched == "") {
                 first_sacrifice.SetStringVariable("organString", "You see a flower wilt");

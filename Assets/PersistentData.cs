@@ -12,13 +12,14 @@ public class PersistentData : MonoBehaviour {
    // public JSONObject data = new JSONObject();
     public Dictionary<string, int> heldProphecies = new Dictionary<string, int>();
     void Start() {
-        GameObject.DontDestroyOnLoad(this);
+        //GameObject.DontDestroyOnLoad(this);
     }
     
     public void AutoSave() {
         string savePath = Application.persistentDataPath + "/saveData.txt";
         StreamWriter saveData = new StreamWriter(savePath, true);
         saveData.WriteLine(first_sacrifice.GetStringVariable("endingKey"));
+        //Debug.Log((first_sacrifice.GetStringVariable("endingKey")));
         saveData.Flush();
         saveData.Close();
     }
