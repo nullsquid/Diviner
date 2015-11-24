@@ -412,7 +412,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
-            theFirstSentence = "You see a " + first_sacrifice.GetStringVariable("commitmentString") + "house, " + first_sacrifice.GetStringVariable("nonAnswerString") + ". " + first_sacrifice.GetStringVariable("organString");
+            theFirstSentence = "You see a " + first_sacrifice.GetStringVariable("commitmentString") + " house, " + first_sacrifice.GetStringVariable("nonAnswerString") + ". " + first_sacrifice.GetStringVariable("organString");
             theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
         }
         else if (firstDivination == "Castle" && firstAnswer == "death") {
@@ -610,6 +610,204 @@ public class BuildEnding : MonoBehaviour {
             }
 
             theFirstSentence = first_sacrifice.GetStringVariable("commitmentString") + " and hear " + first_sacrifice.GetStringVariable("organString") + " " + first_sacrifice.GetStringVariable("nonAnswerString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Shadow" && firstAnswer == "dread") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "and wandering");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", ", searching for your path");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "and standing still");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", ", waiting");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "lost");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "bemused");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "enervated");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "glow");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "bound away");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organString", "hide in the brush");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "skitter into the shade");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Quickly, you are alone again.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You are " + first_sacrifice.GetStringVariable("commitmentString") + " " + first_sacrifice.GetStringVariable("nonAnswerString") + ". " + "You see something " + first_sacrifice.GetStringVariable("organString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Shadow" && firstAnswer == "death") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "in these woods");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "across that lake");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "from atop the trees");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "on the bottom of the river");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "watching");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "listening");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "mumbling");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "coldly");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "deliberately");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organString", "tenderly");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "softly");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It is lingering and quiet");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "There is something alone with you " + first_sacrifice.GetStringVariable("nonAnswerString") + "; " + first_sacrifice.GetStringVariable("commitmentString") + " " + first_sacrifice.GetStringVariable("organString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Shadow" && firstAnswer == "silence") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "hair");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "skin");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "ink");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "sugar");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "bitter");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "sweet");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "acrid");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "old trees groaning");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "insects fluttering");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organString", "wind dancing");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "leaves rustling");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "They wrap your senses and follow in toe.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You smell " + first_sacrifice.GetStringVariable("commitmentString") + " " + first_sacrifice.GetStringVariable("nonAnswerString") + " and hear the " + first_sacrifice.GetStringVariable("organString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Shadow" && firstAnswer == "vision") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "falling star");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "firefly");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "ghostly haze");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "writhing shadow");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "briefly");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "intensely");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "oppressively");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "ravenous");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "exhausted");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organString", "dizzy");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "cold");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You wonder where it is going.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "A " + first_sacrifice.GetStringVariable("nonAnswerString") + " streaks across the sky. You feel " + first_sacrifice.GetStringVariable("commitmentString") + " " + first_sacrifice.GetStringVariable("organString");
             theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
         }
 
@@ -1119,6 +1317,7 @@ public class BuildEnding : MonoBehaviour {
         }
 
 
+
         else if (firstDivination == "Released" && firstAnswer == "prosperity") {
             if (howManyNullAnswers <= 2) {
                 first_sacrifice.SetStringVariable("nonAnswerString", "as you walked");
@@ -1265,6 +1464,479 @@ public class BuildEnding : MonoBehaviour {
             }
 
             theFirstSentence = "You thought you heard footsteps " + first_sacrifice.GetStringVariable("commitmentString") + ", " + first_sacrifice.GetStringVariable("nonAnswerString") + ". " + first_sacrifice.GetStringVariable("organString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Released" && firstAnswer == "silence") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "smelled of citrus and iron");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "tasted like molases");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "felt acrid against your skin");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "hurt your eyes like needles");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "before becoming ash");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "and moaned, anxiously");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "and wrapped around you like a chrysalis");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "The woods");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "The azure clounds");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organString", "The moon's reflection");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "The murmuring shadows");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You are not so far away.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = first_sacrifice.GetStringVariable("organString") + " " + first_sacrifice.GetStringVariable("nonAnswerString") + ", " + first_sacrifice.GetStringVariable("commitmentString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Released" && firstAnswer == "vision") {
+            if (howManyNullAnswers <= 2) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "into the woods");
+            }
+            else if (howManyNullAnswers <= 4) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "into the turbulent night");
+
+            }
+            else if (howManyNullAnswers <= 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "into the denser pockets of fog");
+            }
+            else if (howManyNullAnswers > 6) {
+                first_sacrifice.SetStringVariable("nonAnswerString", "out beyond the trees");
+            }
+            ////////
+            if (commitment == "committed") {
+                first_sacrifice.SetStringVariable("commitmentString", "everything seems so far away");
+            }
+            else if (commitment == "uncommitted") {
+                first_sacrifice.SetStringVariable("commitmentString", "it all stretches out forever");
+
+            }
+            else if (commitment == "timeRanOut") {
+                first_sacrifice.SetStringVariable("commitmentString", "things spiral infinitely downward");
+            }
+            ///////
+            if (firstOrganTouched == "intestines") {
+                first_sacrifice.SetStringVariable("organString", "and it never gets any further away");
+            }
+            else if (firstOrganTouched == "liver") {
+                first_sacrifice.SetStringVariable("organString", "and time seems to stand still");
+            }
+            else if (firstOrganTouched == "pancreas") {
+                first_sacrifice.SetStringVariable("organString", "and everything seems perfect and still");
+            }
+            else if (firstOrganTouched == "") {
+                first_sacrifice.SetStringVariable("organString", "and everything oscillates with every step");
+            }
+            ///////
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You feel anger and sadness in those trees.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "When you look out " + first_sacrifice.GetStringVariable("nonAnswerString") + ", " + first_sacrifice.GetStringVariable("commitmentString") + ". You walk " + first_sacrifice.GetStringVariable("organString");
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Stone" && firstAnswer == "anguish") {
+            
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It obscures the way in front of you.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You find a white rope strung between the trees";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Stone" && firstAnswer == "remorse") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You wished you could turn around.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You are painfully and violently hungry";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Stone" && firstAnswer == "desperation") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Your breath crystallizes as it leaves you.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You see a rock covered in ice along the shore.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Stone" && firstAnswer == "arrogance") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It burns your eyes.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "There is smoke, but no heat or fire";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Stone" && firstAnswer == "woe") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "The smell is sickening and passes over you.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "Fetid earth clings to your boot.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Stone" && firstAnswer == "delight") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "They hover like ghosts on the horizon");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You see the sun beginning to rise, shining purple through the clouds";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Castle" && firstAnswer == "anguish") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It slips down your throat, as you swallow.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "A beetle flies into your open mouth.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Castle" && firstAnswer == "remorse") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "The shapes they make look like forgotten words.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "The shadows from branches flicker in spirals.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Castle" && firstAnswer == "desperation") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "There is no wind.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "One bright white birch sits and sways next to the lake.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Castle" && firstAnswer == "arrogance") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "The cool blue washes over you and warms you.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "A kitten crosses your path with eyes like the sea.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Castle" && firstAnswer == "delight") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "There is a star above you that was not there before.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "The sky turns red for only a moment.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Castle" && firstAnswer == "woe") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "As if a great beast was returning to slumber.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You feel a rumbling beneath you that swells and subsides.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Shadow" && firstAnswer == "anguish") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It disperses as a cloud of flies.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You thought you saw a body hanging from the trees";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Shadow" && firstAnswer == "remorse") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Like a halo, their wings filtering the moonlight");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "A cirecle of locusts buzzes overhead";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Shadow" && firstAnswer == "desperation") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Leaves rain down around you.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "The wind whips around in a vortex.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Shadow" && firstAnswer == "arrogance") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Their feathers look like glass.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "Bloody wings are arranged in a circle.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Shadow" && firstAnswer == "desperation") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "The blades writhe and wiggle in concert.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "One patch of red grass pokes up through the underbrush.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Shadow" && firstAnswer == "woe") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It almost looks like a face, contorted in agony.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You pick up an oak leaf with burnt markings on it.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Tree" && firstAnswer == "anguish") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Sap drips from above onto your face.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You smell something pungent.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Tree" && firstAnswer == "remorse") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It is viscous, like cold tar.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You feel something beneath the shadows slither around your leg";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Tree" && firstAnswer == "desperation") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Glowing eyes watch you from the deep.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You hear music resounding from beneath the lake's surface.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+
+        else if (firstDivination == "Tree" && firstAnswer == "arrogance") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "They stop abruptly with a flicker of green.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "Tiny voices laugh at you as you pass";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Tree" && firstAnswer == "delight") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Then the galloping of hooves and silence.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You hear a heavy breathing behind your ear.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Tree" && firstAnswer == "woe") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "Endlessly and eternally looking out across the waves.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You come across a giant stone head buried by the shore.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Nothing" && firstAnswer == "anguish") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "His flesh dries up, leaving only a husk and is gone.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "The shadow of a man stands tall in front of you.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Nothing" && firstAnswer == "remorse") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "As the ripples pass over your face, a monster stares back.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You glance at your reflection in the lake";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Nothing" && firstAnswer == "desperation") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "A pile of ash and a tiny skeleton lie beneath it.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "A burning doll hangs from a nearby branch";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Nothing" && firstAnswer == "arrogance") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "You slept, and dreamt of hunting.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "For a moment, you thought you were watching you with another's eyes";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Nothing" && firstAnswer == "delight") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "The night is always in front of you.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "You saw daybreak, and gasped for air.";
+            theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
+        }
+        else if (firstDivination == "Nothing" && firstAnswer == "woe") {
+
+            if (talkedToOffering == true) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "It called, and cursed, and spit out your name.");
+            }
+            if (talkedToOffering == false) {
+                first_sacrifice.SetStringVariable("talkedToOfferingString", "");
+            }
+
+            theFirstSentence = "That one lake looked to burn";
             theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
         }
         first_sacrifice.SetStringVariable("endingKey", theFirstSentence + " " + theSecondSentence + "~");
