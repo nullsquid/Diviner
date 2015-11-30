@@ -1014,11 +1014,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1.0
-  scrollPos: {x: 769.980103, y: 381.058411}
+  scrollPos: {x: 1127.75928, y: 248.50708}
   variablesScrollPos: {x: 0, y: 263}
   variablesExpanded: 1
   blockViewHeight: 399
-  zoom: .55000031
+  zoom: .730000198
   scrollViewRect:
     serializedVersion: 2
     x: -1526.86841
@@ -21360,7 +21360,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: .360000014, y: .519999981}
+  m_Size: {x: .419999987, y: .649999976}
 --- !u!212 &365263857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29717,7 +29717,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1541968921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -1.25, z: 2}
+  m_LocalPosition: {x: -1.38, y: -1.13, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 791066222}
