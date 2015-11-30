@@ -838,16 +838,16 @@ public class BuildEnding : MonoBehaviour {
             }
             ///////
             if (firstOrganTouched == "intestines") {
-                first_sacrifice.SetStringVariable("organString", "placed on");
+                first_sacrifice.SetStringVariable("organString", "placed on a rock");
             }
             else if (firstOrganTouched == "liver") {
-                first_sacrifice.SetStringVariable("organString", "dug into");
+                first_sacrifice.SetStringVariable("organString", "dug into the earth");
             }
             else if (firstOrganTouched == "pancreas") {
-                first_sacrifice.SetStringVariable("organString", "broken on");
+                first_sacrifice.SetStringVariable("organString", "broken on the ground");
             }
             else if (firstOrganTouched =="") {
-                first_sacrifice.SetStringVariable("organString", "nailed to");
+                first_sacrifice.SetStringVariable("organString", "nailed to a tree");
             }
             ///////
             if (talkedToOffering == true) {
@@ -1737,7 +1737,7 @@ public class BuildEnding : MonoBehaviour {
                 first_sacrifice.SetStringVariable("talkedToOfferingString", "");
             }
 
-            theFirstSentence = "A cirecle of locusts buzzes overhead";
+            theFirstSentence = "A circle of locusts buzzes overhead";
             theSecondSentence = first_sacrifice.GetStringVariable("talkedToOfferingString");
         }
 
